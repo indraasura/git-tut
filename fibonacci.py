@@ -1,7 +1,9 @@
 def fibonacci(limit):
-    if limit <= 1:
-        return limit
-    else:
-        return fibonacci(n-1) + fibonacci(n-2)
+    fib = []
+    fib[0] = 0
+    fib[1] = 1
+    for i in range(limit):
+        fib[i] = fib[i-1] + fib[i-2]
+    print(fib)
     
 fibonacci(500)
